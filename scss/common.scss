@@ -1,0 +1,44 @@
+:root {
+    font-size:10px;
+}
+
+@import 'normalize/normalize';
+
+@import 'variables/colors';
+
+@import 'pages/fc_directory';
+
+html, body {
+	margin: 0px;
+	padding :0px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    position:relative;
+    font-family: var(--regular);
+    min-height:100vh;
+    z-index:0;
+    background-color:var(--black);
+    color:var(--white);
+    font-size:1.2em;
+    line-height:1.2;
+}
+
+body::before {
+    content:'';
+    background-image:url('https://64.media.tumblr.com/ebdc1525b0750a61949c406a37ccf18b/0e04fffb2083a18a-fa/s2048x3072/fde4025e3d34f9242ce57cfaa4417ca2c7a9199d.jpg');
+    display:block;
+    position:fixed;
+    width:100vw;
+    height:100vh;
+    top:0;
+    left:0;
+    opacity:24%;
+    background-size:cover;
+    background-position:center center;
+    z-index:-1;
+    filter:grayscale(100%);
+    -webkit-filter:grayscale(100%);
+}
